@@ -1,0 +1,17 @@
+.prose {
+  max-width: 680px;
+}
+
+.prose p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 18px;
+}
+
+.prose p:last-child {
+  margin-bottom: 0;
+}
+
+.prose p:first-child::first-letter {
+  color: var(--text);
+}
