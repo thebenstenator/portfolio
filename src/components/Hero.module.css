@@ -55,7 +55,7 @@
 .name {
   font-size: clamp(2.3rem, 7vw, 3.8rem);
   font-weight: 800;
-  line-height: 1.05;
+  line-height: 1.1;
   letter-spacing: -0.03em;
   margin-bottom: 22px;
   display: flex;
@@ -67,6 +67,9 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  /* Give descenders (g, y) room so they aren't clipped by the text clip box */
+  line-height: 1.2;
+  padding-bottom: 0.08em;
 }
 
 .tagline {

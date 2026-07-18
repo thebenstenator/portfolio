@@ -14,7 +14,7 @@ export const profile = {
   location: 'Remote',
   email: 'benjamin.anderson.5809@gmail.com',
   github: 'https://github.com/thebenstenator',
-  linkedin: 'https://www.linkedin.com/in/your-handle', // TODO: real URL
+  linkedin: 'https://www.linkedin.com/in/benanderson5809',
   resume: '/resume.pdf', // TODO: add file to /public
   photo: '/images/profile.svg', // TODO: replace with a real headshot
 }
@@ -48,13 +48,13 @@ export const projects = [
   },
   {
     name: 'HomeWise',
-    tagline: 'Free home maintenance tracker, launched during my job search.',
+    tagline: 'Free home maintenance tracker I built for myself.',
     stack: ['React', 'Node.js', 'Express', 'MongoDB'],
     live: 'https://yourhomewise.app',
     github: null,
     image: '/images/homewise.svg', // TODO: replace with a real screenshot
     blurb:
-      'When Centriq shut down in January 2026, I spotted a gap in the home-maintenance space and built HomeWise to fill it. Homeowners track appliances, warranties, and recurring upkeep in one place. Beyond the code, I treated it like a real launch, printing business cards and handing them to realtors to reach homeowners directly.',
+      'I built HomeWise because I wanted this tool myself: one place to track appliances, warranties, and recurring home upkeep instead of scattered notes and receipts. Once it worked for me, I treated it like a real launch, printing business cards and handing them to realtors to get it in front of other homeowners.',
     featured: false,
   },
   {
@@ -62,7 +62,7 @@ export const projects = [
     tagline: 'Open-source designer for 3D-printable moisture chamber attachments.',
     stack: ['React', 'JavaScript', 'Open Source'],
     live: null,
-    github: 'https://github.com/thebenstenator/customseal', // TODO: verify repo name
+    github: 'https://github.com/thebenstenator/custom-seal',
     image: '/images/customseal.svg', // TODO: replace with a real screenshot
     blurb:
       'An open-source React app that lets you design custom, 3D-printable moisture-chamber attachments to spec. I built it to solve my own problem, then opened it up so others could adapt it. The interesting challenge was translating user inputs into valid, printable geometry parameters entirely in the browser.',
