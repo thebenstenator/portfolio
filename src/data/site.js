@@ -13,7 +13,7 @@ export const profile = {
     'Full-stack engineer with 6 years in fintech, now building and shipping real products with React, Node, and TypeScript.',
   location: 'Remote',
   email: 'benjamin.anderson.5809@gmail.com',
-  github: 'https://github.com/your-username', // TODO: real URL
+  github: 'https://github.com/thebenstenator',
   linkedin: 'https://www.linkedin.com/in/your-handle', // TODO: real URL
   resume: '/resume.pdf', // TODO: add file to /public
   photo: '/images/profile.svg', // TODO: replace with a real headshot
@@ -62,7 +62,7 @@ export const projects = [
     tagline: 'Open-source designer for 3D-printable moisture chamber attachments.',
     stack: ['React', 'JavaScript', 'Open Source'],
     live: null,
-    github: 'https://github.com/your-username/customseal', // TODO: real URL
+    github: 'https://github.com/thebenstenator/customseal', // TODO: verify repo name
     image: '/images/customseal.svg', // TODO: replace with a real screenshot
     blurb:
       'An open-source React app that lets you design custom, 3D-printable moisture-chamber attachments to spec. I built it to solve my own problem, then opened it up so others could adapt it. The interesting challenge was translating user inputs into valid, printable geometry parameters entirely in the browser.',
