@@ -16,7 +16,7 @@ export const profile = {
   github: 'https://github.com/thebenstenator',
   linkedin: 'https://www.linkedin.com/in/benanderson5809',
   resume: '/resume.pdf', // TODO: add file to /public
-  photo: '/images/profile.jpg',
+  photo: '/images/profile.webp',
 }
 
 export const skills = [
