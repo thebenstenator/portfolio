@@ -101,6 +101,10 @@
   transform: translateY(-2px);
 }
 
+.socials a.copied {
+  color: var(--accent);
+}
+
 /* Portrait */
 .portrait {
   justify-self: center;
