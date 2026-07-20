@@ -1,9 +1,7 @@
 // ---------------------------------------------------------------------------
 // Single source of truth for personal info + links.
 // Edit these once and they update everywhere on the site.
-// TODO(ben): fill in your real GitHub + LinkedIn URLs, drop your resume PDF
-// into /public/resume.pdf, and swap the placeholder images in /public/images
-// for real ones (your headshot + screenshots of each site).
+// Assets live in /public: resume at /resume.pdf, images under /public/images.
 // ---------------------------------------------------------------------------
 
 export const profile = {
@@ -11,11 +9,10 @@ export const profile = {
   role: 'Full-Stack Engineer',
   tagline:
     'Full-stack engineer with 6 years in fintech, now building and shipping real products with React, Node, and TypeScript.',
-  location: 'Remote',
   email: 'benjamin.anderson.5809@gmail.com',
   github: 'https://github.com/thebenstenator',
   linkedin: 'https://www.linkedin.com/in/benanderson5809',
-  resume: '/resume.pdf', // TODO: add file to /public
+  resume: '/resume.pdf',
   photo: '/images/profile.webp',
 }
 
