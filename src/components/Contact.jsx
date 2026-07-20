@@ -1,9 +1,12 @@
 import { profile } from '../data/site.js'
 import Section from './Section.jsx'
-import { ArrowIcon, GitHubIcon, LinkedInIcon, MailIcon } from './icons.jsx'
+import { useCopyEmail } from '../hooks/useCopyEmail.js'
+import { ArrowIcon, CheckIcon, GitHubIcon, LinkedInIcon, MailIcon } from './icons.jsx'
 import styles from './Contact.module.css'
 
 export default function Contact() {
+  const { copied, copy } = useCopyEmail(profile.email)
+
   return (
     <Section id="contact" label="04 / Contact" title="Let's build something">
       <div className={styles.wrap}>
@@ -13,8 +16,20 @@ export default function Contact() {
         </p>
 
         <div className={styles.ctas}>
-          <a href={`mailto:${profile.email}`} className="btn btn-primary">
-            {profile.email} <ArrowIcon />
+          <a
+            href={`mailto:${profile.email}`}
+            className="btn btn-primary"
+            onClick={copy}
+          >
+            {copied ? (
+              <>
+                Copied to clipboard <CheckIcon />
+              </>
+            ) : (
+              <>
+                {profile.email} <ArrowIcon />
+              </>
+            )}
           </a>
           <a
             href={profile.resume}
@@ -33,8 +48,8 @@ export default function Contact() {
           <a href={profile.linkedin} target="_blank" rel="noreferrer">
             <LinkedInIcon /> LinkedIn
           </a>
-          <a href={`mailto:${profile.email}`}>
-            <MailIcon /> Email
+          <a href={`mailto:${profile.email}`} onClick={copy}>
+            <MailIcon /> {copied ? 'Copied!' : 'Email'}
           </a>
         </div>
       </div>

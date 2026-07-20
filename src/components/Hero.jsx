@@ -1,8 +1,11 @@
 import { profile } from '../data/site.js'
+import { useCopyEmail } from '../hooks/useCopyEmail.js'
 import { GitHubIcon, LinkedInIcon, MailIcon } from './icons.jsx'
 import styles from './Hero.module.css'
 
 export default function Hero() {
+  const { copied, copy } = useCopyEmail(profile.email)
+
   return (
     <section id="top" className={styles.hero}>
       <div className={styles.inner}>
@@ -44,7 +47,12 @@ export default function Hero() {
             >
               <LinkedInIcon />
             </a>
-            <a href={`mailto:${profile.email}`} aria-label="Email">
+            <a
+              href={`mailto:${profile.email}`}
+              onClick={copy}
+              aria-label={copied ? 'Email copied to clipboard' : 'Email'}
+              title={copied ? 'Copied!' : profile.email}
+            >
               <MailIcon />
             </a>
           </div>

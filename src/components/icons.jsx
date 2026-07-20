@@ -52,3 +52,11 @@ export function ArrowIcon() {
     </svg>
   )
 }
+
+export function CheckIcon() {
+  return (
+    <svg {...base} width="16" height="16" aria-hidden="true">
+      <path d="M20 6 9 17l-5-5" />
+    </svg>
+  )
+}
