@@ -127,9 +127,12 @@
   }
   .portrait {
     order: -1;
-    justify-self: start;
+    justify-self: center;
   }
   .portrait img {
-    max-width: 200px;
+    width: 180px;
+    max-width: 180px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
   }
 }
